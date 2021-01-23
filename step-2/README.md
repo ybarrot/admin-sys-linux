@@ -66,5 +66,5 @@ Mettons à présent que j'exécute la commande `cd /`, puis que je réessaie les
 
 >A retenir : les chemins absolus sont toujours vrais, mais volumineux/verbeux. Les chemins relatifs sont plus courts, mais laissent la possibilité d'une erreur suivant le contexte d'exécution.
 
-Passez maintenant à [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-3)
+Passez maintenant à [l'étape suivante](https://github.com/ybarrot/admin-sys-linux/tree/main/step-3)
 

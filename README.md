@@ -8,7 +8,7 @@ Pour réaliser ce tutoriel, vous avez besoin :
 ## Organisation du tutoriel
 Ce tutoriel est organisé par étapes. Chaque étape est contenue dans un dossier step-*
 
-Pour commencer, allez à [l'étape 1](https://github.com/ybarrot/admin-sys-linux/tree/master/step-1)
+Pour commencer, allez à [l'étape 1](https://github.com/ybarrot/admin-sys-linux/tree/main/step-1)
 
 La version originale de ce tutoriel est disponible sur https://github.com/Nat-Faeeria/tuto-cli-linux
 

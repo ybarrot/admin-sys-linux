@@ -21,5 +21,5 @@ Vous devez créer de plus un dossier partagé pour vos deux parents, accessible 
 
 Vous devez aussi créer un compte invité, qui n'a pas accès aux dossiers familiaux.     
 
-Une fois que vous aurez terminé, passez à [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-7)
+Une fois que vous aurez terminé, passez à [l'étape suivante](https://github.com/ybarrot/admin-sys-linux/tree/main/step-7)
 

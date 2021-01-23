@@ -55,4 +55,4 @@ Ou supprimer des paquets :
   * `apt purge` : supprime le paquet et ses fichiers de configuration
   * `apt autoremove --purge` : supprime le paquet, les paquets dépendants non-utilisés par d'autres paquets et les fichiers de configuration
 
-Vous pouvez passer à [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-8)
+Vous pouvez passer à [l'étape suivante](https://github.com/ybarrot/admin-sys-linux/tree/main/step-8)

@@ -42,4 +42,4 @@ On peut lister tous les processus en cours sur le système en utilisant la comma
 
 On peut arrêter un processus avec la commande `kill <PID>`, ou en appuyant sur la touche `k` dans top, puis en tapant le PID du processus ciblé, et puis en tapant `kill`.
 
-Vous pouvez passer à [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-6)
+Vous pouvez passer à [l'étape suivante](https://github.com/ybarrot/admin-sys-linux/tree/main/step-6)

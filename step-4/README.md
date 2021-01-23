@@ -125,4 +125,4 @@ Pour ce faire, on utilisera les commandes suivantes :
 
 >Astuce : `chgrp` == Change Group, changer de groupe
 
-Vous êtes prêts pour [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-5)
+Vous êtes prêts pour [l'étape suivante](https://github.com/ybarrot/admin-sys-linux/tree/main/step-5)
