@@ -14,7 +14,8 @@ On peut installer un programme en téléchargeant sa version compilée sur le ne
 
   * Utilisez la commande `wget` pour télécharger la base de données mongodb : `wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.2.tgz`
   * Dézippez l'archive récupérée : `tar -zxf mongodb-linux-x86_64-ubuntu1604-3.6.2.tgz`
-  * Déplacez le contenu de cette archive dans un endroit accessible : `sudo mv mongodb-linux-x86_64-ubuntu1604-3.6.2.tgz/* /opt/mongo`
+  * Créez un dossier mongo dans /opt
+  * Déplacez le contenu de cette archive dans un endroit accessible : `sudo mv mongodb-linux-x86_64-ubuntu1604-3.6.2/* /opt/mongo`
   * Listez le contenu de `/opt/mongo`. Il y a un dossier bin : il contient les binaries (fichiers binaires compilés et exécutables) de la base de données. Vérifiez qu'ils soient exécutables
   * Créez un dossier `/data/db' (utilisez l'option `-p` pour le faire en une seule commande)
   * Ajoutez le chemin vers le programme `mongod` dans la liste des chemins vers les programmes du système : `PATH=$PATH:/opt/mongo/bin && export $PATH`
