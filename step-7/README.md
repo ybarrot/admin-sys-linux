@@ -18,7 +18,7 @@ On peut installer un programme en téléchargeant sa version compilée sur le ne
   * Déplacez le contenu de cette archive dans un endroit accessible : `sudo mv mongodb-linux-x86_64-ubuntu1604-3.6.2/* /opt/mongo`
   * Listez le contenu de `/opt/mongo`. Il y a un dossier bin : il contient les binaries (fichiers binaires compilés et exécutables) de la base de données. Vérifiez qu'ils soient exécutables
   * Créez un dossier `/data/db' (utilisez l'option `-p` pour le faire en une seule commande)
-  * Ajoutez le chemin vers le programme `mongod` dans la liste des chemins vers les programmes du système : `PATH=$PATH:/opt/mongo/bin && export $PATH`
+  * Ajoutez le chemin vers le programme `mongod` dans la liste des chemins vers les programmes du système : `PATH=$PATH:/opt/mongo/bin && export PATH`
   * Essayez d'exécuter le programme `mongod` en tapant simplement son nom comme une commande
 
 >Apparté - exécuter un programme : pour exécuter un programme, il suffit de taper son nom, comme une commande, à condition qu'il soit accessible ! Si je rentre le chemin absolu du programme (ex.: `/opt/mongo/bin/mongod`), il s'exécute. Si je suis dans le dossier où est le programme, je peux l'exécuter avec un chemin relatif (ex.: je suis dans /opt/mongo/bin, je tape la commande `./mongod`)
