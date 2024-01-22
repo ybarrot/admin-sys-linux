@@ -53,6 +53,8 @@ Le résultat de cette commande est d'afficher tous les dossiers et fichiers cont
   * `/opt`, qui sert à contenir les logiciels tiers (directement téléchargés par l'utilisateur)
   * `/proc`, qui contient des fichiers "temporaires" pendant l'exécution, relatifs à chacun des processus lancés par le système
   * `/dev`, qui contient les informations sur le matériel et les périphériques (devices)
+  * `/tmp`, fichiers temporaires
+  * `/var`, fichiers qui varient en fonction de l'utilisation du système tels que journaux, bases de données, fichiers de serveurs web
   * ...
 
 >Astuce : `ls` == Lister
