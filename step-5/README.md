@@ -42,7 +42,9 @@ On peut lister tous les processus en cours sur le système en utilisant la comma
 
 On peut arrêter un processus avec la commande `kill <PID>`, ou en appuyant sur la touche `k` dans top, puis en tapant le PID du processus ciblé, et puis en tapant `kill`.
 
-Pour arrêter un processus lancer dans la console : ctrl + c
+Pour arrêter un processus lancer dans la console : ctrl + C
 Ne fonctionne que sur un processus ouvert dans la console.
+
+Chercher la différence entre ctrl + C et ctrl + Z
 
 Vous pouvez passer à [l'étape suivante](https://github.com/ybarrot/admin-sys-linux/tree/main/step-6)
