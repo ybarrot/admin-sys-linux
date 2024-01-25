@@ -57,7 +57,7 @@ Comprenez vous la différence entre `>` et `>>` ?
 
 On veut faire des modifications à notre fichier `fichier-inutile.txt`. Dans le doute, on décide de d'abord en faire une copie.
 
-On utilise la commande `¢p` : `cp fichier-inutile.txt copie-fichier-inutile.txt`
+On utilise la commande `cp` : `cp fichier-inutile.txt copie-fichier-inutile.txt`
 
 On veut aussi faire une copie de `dossier-inutile`. Il faut utiliser `cp`, mais avec une option particulière ... laquelle ? (`man cp`)
 
