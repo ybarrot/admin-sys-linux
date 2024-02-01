@@ -17,7 +17,7 @@ Vous devez rajouter, à la demande de tous, un dossier `Travail` et un dossier `
 
 De plus, vous décidez de créer un dossier partagé pour toute la famille : tous les utilisateurs de la famille doivent y avoir accès et pouvoir écrire dedans.
 
-Vous devez créer de plus un dossier partagé pour vos deux parents, accessible et modifiable uniquement par eux, et un dossier partagé pour les enfants (vous y compris) accessib$
+Vous devez créer de plus un dossier partagé pour vos deux parents, accessible et modifiable uniquement par eux, et un dossier partagé pour les enfants.
 
 Vous devez aussi créer un compte invité, qui n'a pas accès aux dossiers familiaux.     
 
