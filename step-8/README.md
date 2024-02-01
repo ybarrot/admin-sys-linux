@@ -20,18 +20,18 @@ Généralement, le système monte automatiquement les périphériques. Mais parf
 
 ## Installer un nouveau système
 
-Créez une nouvelle machine virtuelle et installez une version `16.04` d'Ubuntu. A l'installation, créez 3 partitions : 
+Créez une nouvelle machine virtuelle et installez la dernière version LTS d'Ubuntu. A l'installation, créez 3 partitions : 
   * une partition avec `/` comme point de montage
   * une partition avec `/home` comme point de montage
   * une partition de swap
 
 Créez quelques dossiers et fichiers dans votre dossier personnel.
 
-Une fois que vous avez fini, essayez d'installer une version `17.10` d'Ubuntu sur la même machine. Lors du partitionnement, n'effacez pas le disque, mais précisez que vous voulez faire les choses de manière custom.
+Une fois que vous avez fini, essayez d'installer la dernière version d'Ubuntu sur la même machine. Lors du partitionnement, n'effacez pas le disque, mais précisez que vous voulez faire les choses de manière custom.
 
 Précisez que vous souhaitez installer le système sur la partition qui a `/` comme point de montage, en effaçant les données. Précisez aussi que vous utiliserez la partition avec `/home` comme point de montage comme partition avec `/home` comme point de montage, mais n'effacez PAS les données ! 
 
-Une fois l'installation terminée, relancez le système. Vous devriez vous connecter à un système `17.10` et ... vos données du `/home` de la version `16.04` seront toujours là ! :D
+Une fois l'installation terminée, relancez le système. Vous devriez vous connecter à un système dans la dernière version et ... vos données du `/home` de la version LTS seront toujours là ! :D
 
 Voilà, c'est la fin de ce tutoriel pour le moment ;) A bientôt pour de prochains updates !
 
