@@ -34,7 +34,7 @@ root@machine:/home/user#
 
 L'utilisateur est `root`, et le `$` de fin devient un `#`.
 
-Sous Debian 10, pour devenir `root`, penser à écrire : `su -`. Regarder le manuel de su pour comprendre la différence.
+Sous Debian, pour devenir `root`, penser à écrire : `su -`. Regarder le manuel de su pour comprendre la différence.
 
 ## Les processus
 
