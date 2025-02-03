@@ -50,7 +50,7 @@ On peut installer un programme en téléchargeant sa version compilée sur le ne
   * Ajoutez le chemin vers le programme `mongod` dans la liste des chemins vers les programmes du système : `PATH=$PATH:/opt/mongo/bin && export PATH`
   * Essayez d'exécuter le programme `mongod` en tapant simplement son nom comme une commande
   * Que se passe-t-il ?
-  * Essayez de résoudre le problème en installant le paquet curl par apt.
+  * Essayez de résoudre le problème en installant le paquet `curl`par apt.
 
 >Apparté - exécuter un programme : pour exécuter un programme, il suffit de taper son nom, comme une commande, à condition qu'il soit accessible ! Si je rentre le chemin absolu du programme (ex.: `/opt/mongo/bin/mongod`), il s'exécute. Si je suis dans le dossier où est le programme, je peux l'exécuter avec un chemin relatif (ex.: je suis dans /opt/mongo/bin, je tape la commande `./mongod`)
 
