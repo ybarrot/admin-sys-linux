@@ -8,27 +8,6 @@ Pour bien comprendre, un petit apparté avant d'expliciter chacune des façons :
 
 >Les fichiers dans Linux : dans Linux, tout est fichier. Votre disque dur est un fichier (dans /dev), qui contient un système de fichiers (arborescence de dossiers et de fichiers. Un dossier est un fichier, de type dossier. Un programme exécutable est un fichier exécutable. Installer quelque chose, c'est mettre les bons fichiers aux bons endroits, de façon à ce que les chemins soient justes, et rendre les bons fichiers exécutables.
 
-### Installation de programme compilés
-
-On peut installer un programme en téléchargeant sa version compilée sur le net, puis en le plaçant à un endroit accessible. On va utiliser un exemple pratique pour comprendre : 
-
-  * Utilisez la commande `wget` pour télécharger la base de données mongodb : `wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian12-8.0.4.tgz`
-  * Dézippez l'archive récupérée : `tar -zxf mongodb-linux-x86_64-debian12-8.0.4.tgz`
-  * Créez un dossier mongo dans /opt
-  * Déplacez le contenu de cette archive dans un endroit accessible : `sudo mv mongodb-linux-x86_64-debian12-8.0.4/* /opt/mongo`
-  * Listez le contenu de `/opt/mongo`. Il y a un dossier bin : il contient les binaries (fichiers binaires compilés et exécutables) de la base de données. Vérifiez qu'ils soient exécutables
-  * Créez un dossier `/data/db' (utilisez l'option `-p` pour le faire en une seule commande)
-  * Ajoutez le chemin vers le programme `mongod` dans la liste des chemins vers les programmes du système : `PATH=$PATH:/opt/mongo/bin && export PATH`
-  * Essayez d'exécuter le programme `mongod` en tapant simplement son nom comme une commande
-  * Que se passe-t-il ?
-  * Essayez de résoudre le problème à la fin de l'étape 8.
-
->Apparté - exécuter un programme : pour exécuter un programme, il suffit de taper son nom, comme une commande, à condition qu'il soit accessible ! Si je rentre le chemin absolu du programme (ex.: `/opt/mongo/bin/mongod`), il s'exécute. Si je suis dans le dossier où est le programme, je peux l'exécuter avec un chemin relatif (ex.: je suis dans /opt/mongo/bin, je tape la commande `./mongod`)
-
->Apparté - le PATH : pour pouvoir exécuter un programme de n'importe où dans le système, il faut que le chemin absolu vers ce programme soit référencé quelquepart. Il existe une variable d'environnement pour le système, nommée PATH, qui contient tous les chemins menant vers des programmes du système. Quand on ajoute un programme quelque part, il faut rajouter son chemin dans $PATH pour pouvoir le lancer de n'importe où. Pour écrire dans PATH, on utilise la commande `PATH=$PATH:<chemin` pour dire que PATH est égal à sa valeur précédente plus un nouveau chemin concaténé. Puis on exporte la variable PATH pour que les modifications soient prises en compte : `export $PATH`. 
-
-Il y a d'autres moyens : télécharger des sources et les compiler soi-même, télécharger un programme avec un script d'installation qui place les éléments automatiquement aux bons endroits, etc.
-
 ### Installation de programmes par paquets
 
 Les paquets sont un ensemble de fichiers et de scripts permettant l'installation d'un programme. Généralement un programme est dépendant de plusieurs paquets (des librairies), qui vont être partagés par tout le système.
@@ -57,5 +36,27 @@ Ou supprimer des paquets :
   * `apt remove <paquet>` : supprime le paquet seul
   * `apt purge` : supprime le paquet et ses fichiers de configuration
   * `apt autoremove --purge` : supprime le paquet, les paquets dépendants non-utilisés par d'autres paquets et les fichiers de configuration
+
+### Installation de programme compilés
+
+On peut installer un programme en téléchargeant sa version compilée sur le net, puis en le plaçant à un endroit accessible. On va utiliser un exemple pratique pour comprendre : 
+
+  * Utilisez la commande `wget` pour télécharger la base de données mongodb : `wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian12-8.0.4.tgz`
+  * Dézippez l'archive récupérée : `tar -zxf mongodb-linux-x86_64-debian12-8.0.4.tgz`
+  * Créez un dossier mongo dans /opt
+  * Déplacez le contenu de cette archive dans un endroit accessible : `sudo mv mongodb-linux-x86_64-debian12-8.0.4/* /opt/mongo`
+  * Listez le contenu de `/opt/mongo`. Il y a un dossier bin : il contient les binaries (fichiers binaires compilés et exécutables) de la base de données. Vérifiez qu'ils soient exécutables
+  * Créez un dossier `/data/db' (utilisez l'option `-p` pour le faire en une seule commande)
+  * Ajoutez le chemin vers le programme `mongod` dans la liste des chemins vers les programmes du système : `PATH=$PATH:/opt/mongo/bin && export PATH`
+  * Essayez d'exécuter le programme `mongod` en tapant simplement son nom comme une commande
+  * Que se passe-t-il ?
+  * Essayez de résoudre le problème en installant le paquet curl par apt.
+
+>Apparté - exécuter un programme : pour exécuter un programme, il suffit de taper son nom, comme une commande, à condition qu'il soit accessible ! Si je rentre le chemin absolu du programme (ex.: `/opt/mongo/bin/mongod`), il s'exécute. Si je suis dans le dossier où est le programme, je peux l'exécuter avec un chemin relatif (ex.: je suis dans /opt/mongo/bin, je tape la commande `./mongod`)
+
+>Apparté - le PATH : pour pouvoir exécuter un programme de n'importe où dans le système, il faut que le chemin absolu vers ce programme soit référencé quelquepart. Il existe une variable d'environnement pour le système, nommée PATH, qui contient tous les chemins menant vers des programmes du système. Quand on ajoute un programme quelque part, il faut rajouter son chemin dans $PATH pour pouvoir le lancer de n'importe où. Pour écrire dans PATH, on utilise la commande `PATH=$PATH:<chemin` pour dire que PATH est égal à sa valeur précédente plus un nouveau chemin concaténé. Puis on exporte la variable PATH pour que les modifications soient prises en compte : `export $PATH`. 
+
+Il y a d'autres moyens : télécharger des sources et les compiler soi-même, télécharger un programme avec un script d'installation qui place les éléments automatiquement aux bons endroits, etc.
+
 
 Vous pouvez passer à [l'étape suivante](https://github.com/ybarrot/admin-sys-linux/tree/main/step-8)
