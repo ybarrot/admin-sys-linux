@@ -37,7 +37,7 @@ Ou supprimer des paquets :
   * `apt purge` : supprime le paquet et ses fichiers de configuration
   * `apt autoremove --purge` : supprime le paquet, les paquets dépendants non-utilisés par d'autres paquets et les fichiers de configuration
 
-### Installation de programme compilés
+### Installation de programmes compilés
 
 On peut installer un programme en téléchargeant sa version compilée sur le net, puis en le plaçant à un endroit accessible. On va utiliser un exemple pratique pour comprendre : 
 
