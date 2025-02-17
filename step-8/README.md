@@ -18,7 +18,7 @@ Généralement, le système monte automatiquement les périphériques. Mais parf
   * Utilisez la commande `mount <chemin de `/dev`> <chemin de `/media`||`/mnt`>`
   * Listez le contenu du dossier que vous avez créé dans `/media`||`/mnt` : il devrait contenir le système de fichier de votre clé usb !
 
-## Installer un nouveau système
+## Installer un nouveau système (NE PAS FAIRE en classe)
 
 Créez une nouvelle machine virtuelle et installez la dernière version LTS d'Ubuntu. A l'installation, créez 3 partitions : 
   * une partition avec `/` comme point de montage
